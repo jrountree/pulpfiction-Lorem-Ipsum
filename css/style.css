@@ -1,0 +1,393 @@
+/* :::::::: FONTS :::::::: */
+/* FONT FAMILY */
+h1,
+p,
+a,
+nav p,
+.submitBtn {
+	font-family: 'Slabo 27px', serif;
+}
+
+h2,
+h3,
+form {
+	font-family: 'Roboto', serif;
+}
+
+/* FONT SIZE */
+.social {
+    font-size: 1.5em;
+}
+
+.title h2 {
+    font-size: 1.4em;
+}
+
+.description p {
+    font-size: 1.3em;
+}
+
+.title h3,
+.col-2-2 p,
+.submitBtn {
+    font-size: 1.2em;
+}
+
+#usrInput,
+.homeBtn a {
+    font-size: 50px;
+}
+
+/* FONT WEIGHT */
+.btn p,
+.btn a,
+.col-2-2 p,
+.here,
+.submitBtn {
+    font-weight: 600;
+}
+
+/* LINKS */
+a {
+	text-decoration: none;
+}
+
+/* :::::::: COLORS ::::::::*/
+.results p {
+    color: #808080;
+}
+
+.mobile ul li a,
+.btn p:hover,
+.btn a:hover,
+.clearbtn p:hover,
+.submitBtn:hover {
+    color: #fff;
+}
+
+a {
+    color: #696969;
+}
+
+a:hover,
+.here {
+    color: #2F4F4F;
+}
+
+.mobile,
+.btn p:hover,
+.btn a:hover,
+.clearbtn:hover,
+.submitBtn:hover {
+    background: #2F4F4F;
+}
+
+.mobile ul li a:hover {
+	color: #d3d3d3;
+}
+
+.btn p,
+.btn a,
+.clearbtn,
+.submitBtn {
+    background: #d3d3d3;
+}
+
+
+/* :::::::: ALIGNMENT ::::::::*/
+.description,
+.foot-2,
+.copyright,
+.footSocial,
+#usrInput,
+.inputSection,
+.col-2-2 p,
+.col-2-2,
+.btn,
+.mobile,
+nav {
+    text-align: center;
+}
+
+/* :::::::: CSS ANIMATIONS ::::::::*/
+.homeBtn {
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.homeBtn:hover {
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+/* :::::::: GLOBAL ::::::::*/
+
+img {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* :::::::: HEADER NAVIGATION ::::::::*/
+.mobile {
+     height: 50px;
+     display: none;
+}
+
+.mobile ul li {
+    display: inline-block;
+    margin: 14px 50px;
+}
+
+.mobile ul li a {
+	letter-spacing: 2px;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+}
+
+
+nav p {
+    margin: 0;
+}
+
+/* :::::::: BUTTONS ::::::::*/
+.btn p,
+.btn a {
+    padding: 20px;
+    letter-spacing: 5px;
+    display: inline-block;
+}
+
+.clearbtn,
+.submitBtn {
+	width: 185px;
+    height: 35px;
+}
+
+.clearbtn p,
+.submitBtn {
+	letter-spacing: 5px;
+
+}
+
+#clearAll {
+	display: none;
+}
+
+.clearbtn, 
+.clearbtn p,
+.submitBtn {
+    margin: 0;
+}
+
+.submitBtn {
+    margin: 0 !important;
+}
+
+.btn p:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background: none;
+    display: block;
+    margin: 0 auto;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+.submitBtn {
+	display: block;
+}
+
+.submitBtn {
+	box-sizing: none;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: initial;
+}
+
+/* :::::::: TITLE SECTION ::::::::*/
+.title h2, 
+.title h3 {
+    margin: 5px 0;
+}
+
+.title {
+	width: 570px;
+    margin: 20px auto;
+}
+
+.col-1-2 {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.col-2-2 {
+    width: 350px;
+    float: left;
+}
+
+.title h1,
+.title h2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#usrInput {
+    height: 90px;
+    margin: 5px 0;
+    width: 95%;
+    outline: none;
+}
+
+.inputSection {
+    float: left;
+    width: 48%;
+}
+
+.radioSection {
+    float: right;
+    width: 48%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.radioSection input {
+    margin: 10px;
+}
+
+.selSection {
+    display: block;
+}
+
+/* :::::::: MAIN PAGE ::::::::*/
+.description {
+    width: 70%;
+    margin: 75px auto 20px auto;
+}
+
+.description p:nth-of-type(2) {
+    margin-bottom: 75px;
+}
+
+.mobileImg {
+	display: none;
+}
+
+
+/* :::::::: RESULT SECTION ::::::::*/
+
+textarea {
+    border: none;
+    resize: none;
+}
+
+.results {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #2F4F4F;
+    height: 300px;
+    overflow-y: scroll;
+    display: inherit;
+    outline: none;
+}
+
+.results p {
+    margin: 5px;
+}
+
+/* :::::::: FOOTER ::::::::*/
+footer {
+    height: 80px;
+}
+
+.foot-1, 
+.foot-2 {
+    float: left;
+    width: 50%;
+}
+
+.footSocial li {
+    display: inline;
+}
+
+.copyright {
+    margin: 5px;
+}
+
+.social {
+    margin: 0 10px;
+}
+
+.foot-2 p {
+    width: 59%;
+    margin: 0;
+    display: inline-block;
+}
+
+.stickyFooter {  
+	  	min-height: calc(100vh - 120px);
+  }
+
+ /* ::::::: MEDIA QUERIES ::::::::*/
+ 
+@media (max-width: 930px) {
+	.mobile {
+		display: inherit;
+	}
+
+	nav {
+		display: none;
+	}
+
+}	/* /930 */
+
+@media (max-width: 600px) {
+	.foot-1, 
+	.foot-2 {
+    	width: 100%;
+    	margin-bottom: 10px;
+	}
+
+	.mobileImg {
+		display: inherit;
+		float: left;
+		width: 125px;
+    	margin-right: 10px;
+	}
+
+	.description {
+    	width: 90%;
+	}
+
+	.col-1-2 {
+		display: none;
+	}
+
+	.col-2-2 {
+	    float: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+}   /* /600 */
