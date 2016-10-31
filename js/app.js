@@ -36,7 +36,7 @@ $("#userSubmit").submit(function(event){
 			} else {
 				type = sentence;
 			} 
-		//Print To Screen
+		//Print To HTML inside textArea
 		for (var i = 0; i < userNumber; i++){
 			var paragraphBreak = '\n';
 			resultText = selection + paragraphBreak + paragraphBreak;
@@ -52,17 +52,7 @@ $("#userSubmit").submit(function(event){
 			target.innerHTML += resultText;
 		}	
 	} 
-
-	//function clearTextArea() {
-	//	document.getElementById('copyText').value= selection;
-	//}
-/*
-	var myVar = selection;
-	var myTextArea = document.getElementById('copyText');
-	myTextArea.innerHTML += myVar;
-
-	document.getElementById("userResults").innerHTML = selection;
-*/	
+	//Check Console for working code
 	console.log(selectNum);
 	console.log(userNumber);
 	console.log(selection);
@@ -80,38 +70,14 @@ $("#clearAll").click(function(event){
 	location.reload();
 
 });
-//var totalSelection = document.getElementById("userSubmit").value;
 
 
-
-
-//Replace temporaryText with pulled quotations
-
-//Copy Button copies quotes onto user's clipboard
-
-//error message
-//$('TEXT').html(userNumber + " is not a number");
-
-
-
-//////// jQuery Scripts ////////////
+//::::::::::::::::::::::::: GENERAL SCRIPTS ::::::::::::::::::::::::::
 
 //Change background on hover
 $('.btn > p').mouseenter(function(){
 	$('.results').css('background', '#d3d3d3');
 });
-
 $('.btn > p').mouseleave(function(){
 	$('.results').css('background', '#fff');
 });
-
-//Remove temporary text from DOM
-$('.submitBtn').click(function(){
-	$('#temporaryText').remove();
-});
-
-$(".trigger").click(function(){
-    $("textarea").select();
-    document.execCommand('copy');
-});
-
