@@ -24,6 +24,7 @@ $("#userSubmit").submit(function(event){
 	//Verify number 
 	if((userNumber < 1) || (userNumber === " ") || (isNaN(userNumber))) {
 		//Error Message for no number entered
+		$('.results').css('color','red');
 		resultText = "Please use an actual number (ie '1', '2', '3'...etc) higher than zero";
 		target.innerHTML += resultText;
 	} else {
@@ -48,6 +49,7 @@ $("#userSubmit").submit(function(event){
 		}
 		//Error for not selecting a size
 		} else {
+			$('.results').css('color','red');
 			resultText = "Please choose the size of text you want ('Large Paragraphs', 'Small Paragraphs', or 'Sentences')";
 			target.innerHTML += resultText;
 		}	
