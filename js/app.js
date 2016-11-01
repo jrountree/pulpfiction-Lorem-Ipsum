@@ -1,4 +1,3 @@
-//var renderer = require("./renderer.js");
 var large = largeParagraph;
 var small = smallParagraph;
 var sentence = sentence;
@@ -54,13 +53,7 @@ $("#userSubmit").submit(function(event){
 			target.innerHTML += resultText;
 		}	
 	} 
-	//Check Console for working code
-	console.log(selectNum);
-	console.log(userNumber);
-	console.log(selection);
-	console.log(type);
 });
-
 
 //Clear button
 $("#clearAll").click(function(event){
