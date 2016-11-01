@@ -42,8 +42,9 @@ $("#userSubmit").submit(function(event){
 			//Randomnly choose a quote inside the chosen type
 			selectNum = Math.floor(Math.random() * type.length);
 			selection = type[selectNum];
+			//Add Paragraph Breaks to Selected Quote
 			resultText = selection + paragraphBreak + paragraphBreak;
-			//target.innerHTML += "STEP STEP STEP STEP" + i;
+			//Print
 			target.innerHTML += resultText;
 		}
 		//Error for not selecting a size
@@ -58,8 +59,6 @@ $("#userSubmit").submit(function(event){
 //Clear button
 $("#clearAll").click(function(event){
 	event.preventDefault();
-	//$('.results').val('');
-	//$("#userSubmit").trigger('reset');
 	$(this).css('display','none');
 	$('.submitBtn').css('display','block');
 	location.reload();
