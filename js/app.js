@@ -24,7 +24,7 @@ $("#userSubmit").submit(function(event){
 	//Verify number 
 	if((userNumber < 1) || (userNumber === " ") || (isNaN(userNumber))) {
 		//Error Message for no number entered
-		$('.results').css('color','red');
+		$('.results').css('color','#951A2A');
 		resultText = "Please use an actual number (ie '1', '2', '3'...etc) higher than zero";
 		target.innerHTML += resultText;
 	} else {
@@ -40,16 +40,16 @@ $("#userSubmit").submit(function(event){
 		//Print To HTML inside textArea
 		for (var i = 0; i < userNumber; i++){
 			var paragraphBreak = '\n';
-			resultText = selection + paragraphBreak + paragraphBreak;
 			//Randomnly choose a quote inside the chosen type
 			selectNum = Math.floor(Math.random() * type.length);
 			selection = type[selectNum];
+			resultText = selection + paragraphBreak + paragraphBreak;
 			//target.innerHTML += "STEP STEP STEP STEP" + i;
 			target.innerHTML += resultText;
 		}
 		//Error for not selecting a size
 		} else {
-			$('.results').css('color','red');
+			$('.results').css('color','#951A2A');
 			resultText = "Please choose the size of text you want ('Large Paragraphs', 'Small Paragraphs', or 'Sentences')";
 			target.innerHTML += resultText;
 		}	
@@ -82,4 +82,10 @@ $('.btn > p').mouseenter(function(){
 });
 $('.btn > p').mouseleave(function(){
 	$('.results').css('background', '#fff');
+});
+
+//Copy Results to Clipboard
+$(".trigger").click(function(){
+    $("#copyText").select();
+    document.execCommand('copy');
 });
