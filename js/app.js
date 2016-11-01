@@ -38,12 +38,12 @@ $("#userSubmit").submit(function(event){
 			} 
 		//Print To HTML inside textArea
 		for (var i = 0; i < userNumber; i++){
-			var paragraphBreak = '\n';
+			var paragraphBreak = '\n\n';
 			//Randomnly choose a quote inside the chosen type
 			selectNum = Math.floor(Math.random() * type.length);
 			selection = type[selectNum];
 			//Add Paragraph Breaks to Selected Quote
-			resultText = selection + paragraphBreak + paragraphBreak;
+			resultText = selection + paragraphBreak;
 			//Print
 			target.innerHTML += resultText;
 		}
