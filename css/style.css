@@ -82,6 +82,16 @@ a:hover,
     background: #2F4F4F;
 }
 
+/*Pulp Fiction Red*/
+textarea::selection {
+    background: #951a2a;
+}
+
+/*Pulp Fiction Yellow*/
+textarea::selection {
+	color: #f2b31c;
+}
+
 .mobile ul li a:hover {
 	color: #d3d3d3;
 }
